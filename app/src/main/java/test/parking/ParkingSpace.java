@@ -4,15 +4,15 @@ package test.parking;
  * Created by Антон on 06.06.2016.
  */
 public class ParkingSpace {
-    private boolean forCargo;
+    private int mType;
     private int mNumber;
 
-    public boolean isForCargo() {
-        return forCargo;
+    public int getType() {
+        return mType;
     }
 
-    public void setForCargo(boolean forCargo) {
-        this.forCargo = forCargo;
+    public void setType(int type) {
+        mType = type;
     }
 
     public int getNumber() {
