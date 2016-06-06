@@ -2,9 +2,7 @@ package test.parking;
 
 import java.util.List;
 
-/**
- * Created by Антон on 06.06.2016.
- */
+
 public class Parking implements ParkingInt {
     private List<ParkingSpace> mSpaces;
 
@@ -15,10 +13,16 @@ public class Parking implements ParkingInt {
     @Override
     public void outOfParking(Car car) {
         ParkingSpace out = new ParkingSpace();
-        if (car instanceof Passanger) {
-            out.setType(Constants.CarType.PASSANGER);
-        } else if (car instanceof Cargo) {
-            out.setType(Constants.CarType.CARGO);
+        switch (car.getCarType()) {
+            case Constants.CarType.PASSANGER: {
+                out.setType(Constants.CarType.PASSANGER);
+                break;
+            }
+            case Constants.CarType.CARGO: {
+                out.setType(Constants.CarType.CARGO);
+                break;
+            }
+
         }
         out.setNumber(car.getParkingNumb());
         mSpaces.add(out);

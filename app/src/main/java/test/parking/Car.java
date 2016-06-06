@@ -1,11 +1,17 @@
 package test.parking;
 
-/**
- * Created by Антон on 06.06.2016.
- */
 public class Car {
 
     private int mParkingNumb;
+    private int carType;
+
+    public int getCarType() {
+        return carType;
+    }
+
+    public void setCarType(int carType) {
+        this.carType = carType;
+    }
 
     public int getParkingNumb() {
         return mParkingNumb;
@@ -14,5 +20,6 @@ public class Car {
     public void setParkingNumb(int parkingNumb) {
         mParkingNumb = parkingNumb;
     }
+
 
 }

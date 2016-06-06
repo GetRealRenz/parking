@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         space = new ArrayList<>();
         parking.setSpaces(space);
         Passanger car = new Passanger();
+        car.setCarType(Constants.CarType.PASSANGER);
         parking.enterToParking(car);
         parking.outOfParking(car);
 
