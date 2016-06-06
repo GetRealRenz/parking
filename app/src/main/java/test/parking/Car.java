@@ -5,7 +5,6 @@ package test.parking;
  */
 public class Car {
 
-    private boolean isCargo;
     private int mParkingNumb;
 
     public int getParkingNumb() {
@@ -16,11 +15,4 @@ public class Car {
         mParkingNumb = parkingNumb;
     }
 
-    public boolean isCargo() {
-        return isCargo;
-    }
-
-    public void setCargo(boolean cargo) {
-        isCargo = cargo;
-    }
 }
